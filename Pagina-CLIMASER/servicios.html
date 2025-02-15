@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons8-aire-acondicionado-16.png" type="image/x-icon">
+    <title>Climaser - Servicios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #0033A0, #4A4A4A);
+            color: #f5f5f5;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #000;
+            padding: 15px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 36px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        /* Navegación */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            font-weight: 600;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        li a:hover,
+        .active {
+            background-color: #0033A0;
+            border-radius: 5px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        /* Servicios */
+        .service {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .service h3 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #f5f5f5;
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #222;
+            color: #FFF;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #0033A0;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .service h3 {
+                font-size: 20px;
+            }
+
+            .service p {
+                font-size: 14px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-links {
+                margin-top: 10px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CLIMASER REFRIGERACIÓN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre nosotros</a></li>
+                <li><a class="active" href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="service">
+            <h3>✅ Instalación de Aires Acondicionados</h3>
+            <p>Montaje profesional de equipos split, multisplit y VRV.</p>
+            <img src="assets/instalacion.jpg" alt="Instalación de Aires Acondicionados">
+        </div>
+        <div class="service">
+            <h3>✅ Reparación de Plaquetas Electrónicas</h3>
+            <p>Diagnóstico y solución de fallas en circuitos electrónicos.</p>
+            <img src="assets/reparacion.jpg" alt="Reparación de Plaquetas Electrónicas">
+        </div>
+        <div class="service">
+            <h3>✅ Sistemas de Preinstalación</h3>
+            <p>Instalación de cañerías embutidas en edificaciones en construcción.</p>
+            <img src="assets/preinstalacion.jpg" alt="Sistemas de Preinstalación">
+        </div>
+        <div class="service">
+            <h3>✅ Reparación y Mantenimiento</h3>
+            <p>Soluciones rápidas y efectivas para optimizar el rendimiento de tu equipo.</p>
+            <img src="assets/mantenimiento.jpg" alt="Reparación y Mantenimiento">
+        </div>
+        <div class="service">
+            <h3>✅ Venta de Equipos</h3>
+            <p>Te ayudamos a elegir la mejor opción según tus necesidades.</p>
+            <img src="assets/venta.jpg" alt="Venta de Equipos">
+        </div>
+        <div class="service">
+            <h3>✅ Auditoría y Asesoramiento</h3>
+            <p>Planificamos el sistema de climatización ideal para tu espacio.</p>
+            <img src="assets/auditoria.jpg" alt="Auditoría y Asesoramiento">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Todos los derechos reservados &copy; 2025 CLIMASER Refrigeración</p>
+            <div class="footer-links">
+                <a href="https://wa.me/5491112345678" target="_blank">WhatsApp</a>
+                <a href="mailto:info@climaser.com">Correo Electrónico</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

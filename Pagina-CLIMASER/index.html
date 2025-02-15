@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons8-aire-acondicionado-16.png" type="image/x-icon">
+    <title>Climaser - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #0033A0, #4A4A4A);
+            color: #f5f5f5;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #000;
+            padding: 15px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 36px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 28px;
+            text-align: center;
+            padding: 15px;
+            color: #ffffff;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navegación */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            font-weight: 600;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        li a:hover,
+        .active {
+            background-color: #0033A0;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        /* Hero Section */
+        /* Hero Section Mejorada */
+.hero {
+    background-image: url('assets/hero-image.jpg'); /* Asegúrate de usar una imagen de alta calidad */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+}
+
+/* Efecto de superposición más oscuro para mejorar la visibilidad del texto */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Mayor opacidad */
+}
+
+/* Contenido dentro de la hero */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Mejoramos el título para que destaque más */
+.hero h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1.5px;
+}
+
+/* Botón mejorado */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+    display: inline-block;
+}
+
+/* Efecto al pasar el cursor */
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Imágenes */
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #222;
+            color: #FFF;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #0033A0;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                height: 300px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-links {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CLIMASER REFRIGERACIÓN</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="Index.html">Sobre nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section Mejorada -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Expertos en Climatización y Refrigeración</h2>
+            <a href="contacto.html" class="cta-button">Contáctanos</a>
+        </div>
+    </section>
+
+    <h2>Soluciones en Climatización y Refrigeración a tu medida</h2>
+    <hr>
+
+    <!-- Contenido principal -->
+    <article class="container">
+        <div>
+            <h3><strong>Acerca de nosotros</strong></h3>
+            <p>Somos un emprendimiento familiar con más de 15 años de experiencia en el mercado, brindando soluciones
+                integrales en aire acondicionado y refrigeración. Nos especializamos en la instalación, reparación y
+                mantenimiento de equipos de todas las marcas y capacidades, además de ofrecer auditoría y asesoramiento
+                para garantizar el confort y la eficiencia en cada espacio.</p>
+        </div>
+        <img class="image" src="assets/BGH15.jpeg" alt="Colocacion de ductos de Refrigeración">
+    </article>
+
+    <article class="container">
+        <img class="image" src="assets/WhatsApp Image 2025-02-05 at 2.37.34 PM.jpeg" alt="Colocación AA 15.000FR">
+        <div>
+            <p>A lo largo de los años, hemos trabajado con hogares, empresas y construcciones en proceso, adaptándonos a
+                las necesidades de cada cliente con profesionalismo y compromiso. Nuestro objetivo es ofrecer un servicio
+                de calidad, confiable y duradero, asegurando que cada instalación y reparación sea realizada con los más
+                altos estándares.</p>
+            <p>Si buscas una solución en climatización, estamos a tu disposición para ayudarte con atención personalizada
+                y resultados garantizados. ¡Nuestra experiencia nos respalda!</p>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Todos los derechos reservados &copy; 2025 CLIMASER Refrigeración</p>
+            <div class="footer-links">
+                <a href="https://wa.me/1157084900" target="_blank">WhatsApp</a>
+                <a href="mailto:climaser@live.com.ar">Correo Electrónico</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
